@@ -21,6 +21,8 @@ function areYouPlayingBanjo(name) {
   }
   return `${name} does not play banjo`;
 }
+/*For this problem I felt that it was a little confusing at first with the wording and I didn't know how to target the r in uppercase as well. 
+Once I remembered I could use the .toLowerCase() it was simple */
 
 //QUESTION TWO
 /* Write a function that takes an array of numbers and returns the sum of the numbers. The numbers can be negative or non-integer. If the array does not contain any numbers then you should return 0. */
@@ -35,6 +37,7 @@ function sum(numbers) {
     return numbers.reduce((total, array) => total + array);
   }
 }
+/*During this problem I was able to use the .reduce( ) which I had used in a prior GI. Knowing methods makes some of this easier */
 
 //QUESTION 3
 /*Clock shows h hours, m minutes and s seconds after midnight.
@@ -45,6 +48,8 @@ function past(h, m, s) {
   //2. calculate how many miliseconds are in a second then multiply that but m and h
   return h * 3_600_000 + m * 60_000 + s * 1_000;
 }
+/* As simple as this one was I could not wrap my head around how to do the math.
+ It was until I took it step by step and solved the miliseconds first that I understood how I could make this function */
 
 //QUESTION 4
 /*You get an array of numbers, return the sum of all of the positives ones. */
@@ -99,6 +104,8 @@ function basicOp(operation, value1, value2) {
   //2. using string interpolation, we can calculate within the backticks, and using eval will evaluate the values.
   return eval(`${value1} ${operation} ${value2}`);
 }
+/* This question made me dive a little deeper into the eval(), I tried not to use it for my calculator and went the harder route so I didn't know how it worked especially since everyone says its a security risk. 
+This method was so useful in addition to the string literals. */
 
 //QUESTION 7
 /*Given an array of integers.
@@ -127,6 +134,7 @@ function countPositivesSumNegatives(input) {
   }
   return [count, sum];
 }
+/*I was stumped on this one for a while, I wanted to use a forEach loop then I realized it would be easier with a for loop because of the different functionality of the variables */
 
 //QUESTION 8
 /* Your task is to make two functions ( max and min, or maximum and minimum, etc., depending on the language ) that receive a list of integers as input, and return the largest and lowest number in that list, respectively. Each function returns one number.*/
@@ -141,3 +149,4 @@ const max = (list) => {
   //.3 I'll do the same with the Math.max
   return Math.max(...list);
 };
+/* For this question I had to go to MDN and utilize the Math object section to get a refresher. I knew it could work but I had never used it. It was hard but Im glad I did it. */
